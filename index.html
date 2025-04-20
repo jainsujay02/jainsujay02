@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sujay Jain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?
+      family=Open+Sans:wght@300;400;600&
+      family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --icon: #000000;
+      --border: #bbbbbb;
+      --dot-bg: #000000;
+      --dot-border: none;
+    }
+    body {
+      padding: 8rem 2rem 2rem;
+      margin: 0 auto;
+      max-width: 600px;
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      --bg: #000000;
+      --text: #ffffff;
+      --icon: #ffffff;
+      --border: #444444;
+      --dot-bg: transparent;
+      --dot-border: 2px solid #ffffff;
+    }
+    header {
+      text-align: left;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+    #dark-mode-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background: var(--dot-bg);
+      border: var(--dot-border);
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0.5rem;
+      transition: background 0.3s, border 0.3s;
+    }
+    .intro p {
+      margin: 1rem 0;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+    .icons {
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+    .icons a {
+      margin-right: 0.75rem;
+      font-size: 1.4rem;
+      color: var(--icon);
+      opacity: 0.9;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .icons a:hover {
+      opacity: 1;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 6rem 2rem 1.5rem;
+      }
+      header h1 {
+        font-size: 1.75rem;
+      }
+      #dark-mode-toggle {
+        top: 0.25rem;
+        right: 0.25rem;
+        width: 14px;
+        height: 14px;
+        margin: 0.25rem;
+      }
+      .icons a {
+        font-size: 1.6rem;
+        margin-right: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sujay Jain</h1>
+    <div id="dark-mode-toggle" title="Toggle Dark Mode"></div>
+  </header>
+
+  <div class="intro">
+    <p>I’m a Computer Engineering student at UCLA, where I’ve worked on multimodal AI systems for healthcare.</p>
+    <p>Along the way, I realized that models are only as good as the data behind them — sparking a lasting interest in data infrastructure and engineering.</p>
+    <p>I care about responsible AI, open-source, and making computer science more accessible through mentorship and teaching.</p>
+    <p>Outside of school, I love to watch plays, be outdoors and do photography.</p>
+  </div>
+
+  <div class="icons">
+    <a href="mailto:jainsujay@ucla.edu" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/jainsujay" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/jainsujay02" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+    <a href="https://sujayphotography.com" target="_blank" title="Photography"><i class="fas fa-camera"></i></a>
+  </div>
+
+  <script>
+    document
+      .getElementById('dark-mode-toggle')
+      .addEventListener('click', () => document.body.classList.toggle('dark-mode'));
+  </script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+</body>
+</html>
