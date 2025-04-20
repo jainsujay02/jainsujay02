@@ -1,7 +1,7 @@
 ### Hi, I'm Sujay 👋
 
 
-I am a Senior at UCLA majoring in Computer Engineering. 
+I am a senior at UCLA majoring in Computer Engineering. 
 
 Over the last four years, I've had pleasure of leading [ ACM at UCLA](https://https://www.uclaacm.com/), and teaching Python in underserved schools in LA through [ACM TeachLA](https://https://teachla.uclaacm.com/). In my free time, I like to be outdoors and do [photography](https://https://www.sujayphotography.com/). 
 
